@@ -1,0 +1,31 @@
+Word instructions = 16 bits
+Memory instructions = 16 bits
+
+Memory instructions
+
+(x -> any value)
+0XXX XXXX XXXX XXXX -> address data
+
+1XXX XXXX XXXX XXXX -> instruction_data
+
+Input bits in ALU
+(AND,OR,XOR,ADD)
+
+ZERO_A = 0 (a)
+NEGATE_A = 0 (b)
+
+ZERO_B = 0 (c)
+NEGATE_B = 0 (d)
+MODE: (e)
+AND = 00 
+OR = 01 
+XOR = 10 
+ADD = 11
+
+NEGATE_OUT = 0 (f)
+ZERO_OUT = 0 (g)
+
+1XXX XXXX abcd eefg
+
+(NOT)
+
