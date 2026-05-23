@@ -368,10 +368,6 @@
     <a name="circuit" val="Matsuzaka_CPU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(130,590)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="width" val="16"/>
-    </comp>
     <comp lib="0" loc="(450,260)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="width" val="16"/>
@@ -392,7 +388,7 @@
     <comp lib="0" loc="(450,460)" name="Pin">
       <a name="appearance" val="NewPins"/>
     </comp>
-    <comp lib="0" loc="(560,650)" name="Pin">
+    <comp lib="0" loc="(510,760)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="type" val="output"/>
@@ -418,7 +414,11 @@
       <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="5" loc="(180,610)" name="ROM">
+    <comp lib="0" loc="(80,700)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="5" loc="(130,720)" name="ROM">
       <a name="addrWidth" val="16"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 16 16
@@ -429,10 +429,9 @@
       <a name="labelvisible" val="true"/>
     </comp>
     <comp loc="(640,360)" name="Matsuzaka_ALU"/>
-    <wire from="(130,590)" to="(180,590)"/>
-    <wire from="(180,590)" to="(180,620)"/>
-    <wire from="(420,650)" to="(420,670)"/>
-    <wire from="(420,650)" to="(560,650)"/>
+    <wire from="(130,700)" to="(130,730)"/>
+    <wire from="(370,760)" to="(370,780)"/>
+    <wire from="(370,760)" to="(510,760)"/>
     <wire from="(450,260)" to="(500,260)"/>
     <wire from="(450,290)" to="(490,290)"/>
     <wire from="(450,320)" to="(550,320)"/>
@@ -451,5 +450,6 @@
     <wire from="(610,400)" to="(610,460)"/>
     <wire from="(630,390)" to="(630,460)"/>
     <wire from="(640,360)" to="(750,360)"/>
+    <wire from="(80,700)" to="(130,700)"/>
   </circuit>
 </project>
