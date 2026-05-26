@@ -1,52 +1,76 @@
-Word instructions = 16 bits
-Memory instructions = 16 bits
+Word = 16 bits
+instructions = 16 bits
+data = 16 bits
+jump address = 16 bits
 
-Memory instructions
+instruction bitmaps
 
-(x -> any value)
+aabc cccc xxxx xxxx
 
-Input bits in ALU
-(AND,OR,XOR,ADD)
+a - function group
+	00 - NOP
+	01 - Arithmetic and Logic
+	10 - Jump
+	11 - Memory
 
-ZERO_A = 0 (a)
-NEGATE_A = 0 (b)
+b - 1 or 2 registers
+	0 - 1 register
+	1 - 2 registers
 
-ZERO_B = 0 (c)
-NEGATE_B = 0 (d)
-MODE: (e)
-AND = 00 
-OR = 01 
-XOR = 10 
-ADD = 11
+c - specific function
 
-NEGATE_OUT = 0 (f)
-ZERO_OUT = 0 (g)
 
-r = Register A
-R = Register B
+(Arithmetic and logic)
 
-abcd eefg rrrr RRRR
+-AND [RegA],[RegB]  -> 0 0000
+-OR [RegA],[RegB]   -> 0 0001
+-NOT [RegA]         -> 0 0010
+-ADD [RegA],[RegB]  -> 0 0011
+-SUB [RegA],[RegB]  -> 0 0100
+-XOR [RegA],[RegB]  -> 0 0101
 
 JUMP
 
--JEQ [Jump tag]
--JLT [Jump tag]
--JGT [Jump tag]
--JMP [Jump tag]
--JGE (jump more or equal) [Jump tag]
--JLE (jump less or equal) [Jump tag]
+-JEQ [Jump tag]     -> 0 0000
+-JLT [Jump tag]     -> 0 0001
+-JGT [Jump tag]     -> 0 0010
+-JMP [Jump tag]     -> 0 0011
+-JGE (jump more or equal) [Jump tag]     -> 0 0100
+-JLE (jump less or equal) [Jump tag]     -> 0 0101
 
 Memory
 
--CPY (copy) [RegA],[RegB]
--LIM (Load immediate) [RegA], [immediate_num]
--LAD (Load address) [RegA]
--MOV (move data) [RegA], [RegB]
--INC (increment) [RegA]
--DEC (decrement) [RegA]
--RET (return) [RegA]
--PSH (push) [RegA]
--POP (pop) [RegA]
+-CPY (copy) [RegA],[RegB]                        -> 0 0000
+-LIM (Load immediate) [RegA], [immediate_num]    -> 0 0001
+-LAD (Load address) [RegA]                       -> 0 0010
+-MOV (move data) [RegA], [RegB]                  -> 0 0011
+-INC (increment) [RegA]                          -> 0 0100
+-DEC (decrement) [RegA]                          -> 0 0101
+-RET (return) [RegA]                             -> 0 0110
+-PSH (push) [RegA]                               -> 0 0111
+-POP (pop) [RegA]                                -> 0 1000
 
 
+THE MATSUZAKA CONTROLLER UNIT
 
+Input: aabc cccc
+
+a - function group
+	00 - NOP
+	01 - Arithmetic and Logic
+	10 - Jump
+	11 - Memory
+
+b - 1 or 2 registers
+	0 - 1 register
+	1 - 2 registers
+
+c - specific function
+
+Output: AABB MMOO S
+
+A - Reg A conditions
+B - Reg B conditions
+M - Mode
+O - Output condtions
+S - Output select
