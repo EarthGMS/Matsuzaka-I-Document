@@ -4,9 +4,6 @@ Memory instructions = 16 bits
 Memory instructions
 
 (x -> any value)
-0XXX XXXX XXXX XXXX -> address data
-
-1XXX XXXX XXXX XXXX -> instruction_data
 
 Input bits in ALU
 (AND,OR,XOR,ADD)
@@ -25,7 +22,9 @@ ADD = 11
 NEGATE_OUT = 0 (f)
 ZERO_OUT = 0 (g)
 
-1XXX XXXX abcd eefg
+abcd eefg 0000 0000
 
 (NOT)
+
+0100 0000 0000 0000
 
