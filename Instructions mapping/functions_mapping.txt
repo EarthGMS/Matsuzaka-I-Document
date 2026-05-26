@@ -22,9 +22,31 @@ ADD = 11
 NEGATE_OUT = 0 (f)
 ZERO_OUT = 0 (g)
 
-abcd eefg 0000 0000
+r = Register A
+R = Register B
 
-(NOT)
+abcd eefg rrrr RRRR
 
-0100 0000 0000 0000
+JUMP
+
+-JEQ [Jump tag]
+-JLT [Jump tag]
+-JGT [Jump tag]
+-JMP [Jump tag]
+-JGE (jump more or equal) [Jump tag]
+-JLE (jump less or equal) [Jump tag]
+
+Memory
+
+-CPY (copy) [RegA],[RegB]
+-LIM (Load immediate) [RegA], [immediate_num]
+-LAD (Load address) [RegA]
+-MOV (move data) [RegA], [RegB]
+-INC (increment) [RegA]
+-DEC (decrement) [RegA]
+-RET (return) [RegA]
+-PSH (push) [RegA]
+-POP (pop) [RegA]
+
+
 
