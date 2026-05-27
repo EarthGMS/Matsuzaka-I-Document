@@ -79,3 +79,4 @@ S - Output select
 	1 - to counter
 
 Instruction link -> https://docs.google.com/spreadsheets/d/1JnQD9EEpkL4P97TlsYsK84soY4xs8-h9jC2yc3JCFfg/edit?usp=sharing
+Control unit link -> https://docs.google.com/spreadsheets/d/1k09lpDB7wZF0DNZvVlVZAxv7vPhr4a-dqoOzjFRPy3s/edit?usp=sharing
