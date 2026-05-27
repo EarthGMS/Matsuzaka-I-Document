@@ -42,13 +42,14 @@ Memory
 
 -CPY (copy) [RegA],[RegB]                        -> 0 0000
 -LIM (Load immediate) [RegA], [immediate_num]    -> 0 0001
--LAD (Load address) [RegA]                       -> 0 0010
--MOV (move data) [RegA], [RegB]                  -> 0 0011
--INC (increment) [RegA]                          -> 0 0100
--DEC (decrement) [RegA]                          -> 0 0101
--RET (return) [RegA]                             -> 0 0110
--PSH (push) [RegA]                               -> 0 0111
--POP (pop) [RegA]                                -> 0 1000
+LAD (Load address) [RegA]                       -> 0 0010
+MOV (move data) [RegA], [RegB]                  -> 0 0011
+INC (increment) [RegA]                          -> 0 0100
+DEC (decrement) [RegA]                          -> 0 0101
+RET (return)                                    -> 0 0110
+CAL (Call)                                      -> 0 0111
+PSH (push) [RegA]                               -> 0 1000
+POP (pop) [RegA]                                -> 0 1001
 
 
 THE MATSUZAKA CONTROLLER UNIT
@@ -74,3 +75,7 @@ B - Reg B conditions
 M - Mode
 O - Output condtions
 S - Output select
+	0 - to memory
+	1 - to counter
+
+Instruction link -> https://docs.google.com/spreadsheets/d/1JnQD9EEpkL4P97TlsYsK84soY4xs8-h9jC2yc3JCFfg/edit?usp=sharing

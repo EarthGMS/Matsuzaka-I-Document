@@ -1,0 +1,6 @@
+The Matsa code program
+
+Objective - a program that can:
+	1. Code the program in Matsa code
+	2. Convert Matsa into Matsusembly code
+	3. Send Matsusembly into the Matsuzaka computer
