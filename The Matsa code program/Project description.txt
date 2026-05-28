@@ -4,3 +4,5 @@ Objective - a program that can:
 	1. Code the program in Matsa code
 	2. Convert Matsa into Matsusembly code
 	3. Send Matsusembly into the Matsuzaka computer
+
+DOCS -> https://docs.google.com/document/d/1lYshJ-dQKhH4GLVEPnU7JQ_YEpvu3Qke70jV2krgeMk/edit?usp=sharing
