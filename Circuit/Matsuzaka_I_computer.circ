@@ -487,4 +487,28 @@
     <wire from="(970,820)" to="(970,920)"/>
     <wire from="(970,820)" to="(990,820)"/>
   </circuit>
+  <circuit name="Control_unit">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Control_unit"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(570,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Function_group"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(570,330)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Reg_amount"/>
+    </comp>
+    <comp lib="0" loc="(570,380)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="No_register"/>
+    </comp>
+    <comp lib="0" loc="(570,440)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Specific_function"/>
+      <a name="width" val="4"/>
+    </comp>
+  </circuit>
 </project>
