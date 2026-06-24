@@ -49,7 +49,7 @@ Wire Bus Line
 	3050 2500 3050 1650
 Wire Bus Line
 	4500 1650 4500 2500
-Text Notes 3050 2400 1    50   ~ 0
+Text Notes 3150 2400 1    50   ~ 0
 -> RAM CTRL
 Wire Bus Line
 	2950 2500 2950 1550
@@ -59,7 +59,7 @@ Text Notes 2950 2400 1    50   ~ 0
 -> IO CTRL
 Text Notes 2350 2400 1    50   ~ 0
 <- PC CTRL
-Text Notes 4500 2400 1    50   ~ 0
+Text Notes 4300 2400 1    50   ~ 0
 <- RAM CTRL
 Text Notes 4900 2400 1    50   ~ 0
 <- IO CTRL
@@ -168,8 +168,8 @@ Wire Bus Line
 	3150 1750 4300 1750
 Wire Bus Line
 	4300 1750 4300 2500
-Text Notes 3150 2400 1    50   ~ 0
+Text Notes 3050 2400 1    50   ~ 0
 -> RAM ADDR
-Text Notes 4300 2400 1    50   ~ 0
+Text Notes 4500 2400 1    50   ~ 0
 <- RAM ADDR
 $EndSCHEMATC
