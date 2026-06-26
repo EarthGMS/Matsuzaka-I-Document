@@ -83,16 +83,16 @@ Text Label 3900 3650 0    50   ~ 0
 IS_TMP2
 Text Label 3900 3750 0    50   ~ 0
 IS_0x1
-Text Label 3900 2450 0    50   ~ 0
+Text Label 3900 2350 0    50   ~ 0
 AIS_ROM
-Text Label 3900 2550 0    50   ~ 0
+Text Label 3900 2450 0    50   ~ 0
 AIS_Ra#
-Text Label 3900 2650 0    50   ~ 0
+Text Label 3900 2550 0    50   ~ 0
 AIS_Rb#
-Text Label 3900 2750 0    50   ~ 0
+Text Label 3900 2650 0    50   ~ 0
 AIS_TMP2
-Text Label 3900 2850 0    50   ~ 0
-AS_ALUO
+Text Label 3900 2750 0    50   ~ 0
+AS_ACL
 Wire Wire Line
 	2050 3400 1900 3400
 Text Label 2050 3400 2    50   ~ 0
@@ -100,15 +100,15 @@ OLS
 Wire Notes Line style solid rgb(0, 255, 0)
 	2300 3550 2050 3550
 Wire Wire Line
-	3900 2750 4250 2750
-Wire Wire Line
 	3900 2650 4250 2650
 Wire Wire Line
 	3900 2550 4250 2550
 Wire Wire Line
 	3900 2450 4250 2450
 Wire Wire Line
-	3900 2850 4250 2850
+	3900 2350 4250 2350
+Wire Wire Line
+	3900 2750 4250 2750
 Wire Wire Line
 	3900 2950 4250 2950
 Wire Wire Line
@@ -194,21 +194,15 @@ Wire Bus Line
 Wire Notes Line style solid rgb(0, 255, 0)
 	2300 3050 2050 3050
 Wire Wire Line
-	3900 2350 4250 2350
+	3900 2250 4250 2250
 Wire Notes Line style solid rgb(0, 255, 0)
 	2300 3050 2300 3550
 Wire Notes Line style solid rgb(0, 255, 0)
 	2050 3050 2050 3550
-Text Label 3900 2350 0    50   ~ 0
+Text Label 3900 2250 0    50   ~ 0
 SEQ_END
 Wire Notes Line style solid rgb(0, 255, 0)
-	3900 2300 3900 4700
-Wire Notes Line style solid rgb(0, 255, 0)
 	3900 4700 3650 4700
-Wire Notes Line style solid rgb(0, 255, 0)
-	3650 4700 3650 2300
-Wire Notes Line style solid rgb(0, 255, 0)
-	3650 2300 3900 2300
 Text Notes 3200 3650 1    50   ~ 0
 SEQUENCE\n CONTROL
 Text Label 3250 3450 0    50   ~ 0
@@ -226,8 +220,6 @@ Wire Bus Line
 Wire Bus Line
 	2300 3500 3000 3500
 Entry Wire Line
-	4250 2850 4350 2750
-Entry Wire Line
 	4250 2750 4350 2650
 Entry Wire Line
 	4250 2650 4350 2550
@@ -235,36 +227,26 @@ Entry Wire Line
 	4250 2550 4350 2450
 Entry Wire Line
 	4250 2450 4350 2350
-Text Notes 5300 2800 1    50   ~ 0
+Entry Wire Line
+	4250 2350 4350 2250
+Text Notes 4950 2650 1    50   ~ 0
 RAM ADDRESS\n  CONTROL
-Wire Bus Line
-	4350 2750 5100 2750
-Text Label 5100 2750 2    50   ~ 0
+Text Label 4750 2100 2    50   ~ 0
 ADDR_SEL
-Text Label 5100 2650 2    50   ~ 0
+Text Label 4750 2500 2    50   ~ 0
 DBUS
-Text Label 5100 2550 2    50   ~ 0
+Text Label 4750 2400 2    50   ~ 0
 OPCODE
 Wire Bus Line
-	5100 2550 4800 2550
-Text Label 5100 2350 2    50   ~ 0
+	4750 2400 4450 2400
+Text Label 4750 2200 2    50   ~ 0
 Ra#
-Text Label 5100 2450 2    50   ~ 0
+Text Label 4750 2300 2    50   ~ 0
 Rb#
 Wire Bus Line
-	4800 2650 5100 2650
+	4450 2300 4750 2300
 Wire Bus Line
-	4800 2450 5100 2450
-Wire Bus Line
-	4800 2350 5100 2350
-Wire Notes Line style solid rgb(0, 255, 0)
-	5100 2250 5100 2800
-Wire Notes Line style solid rgb(0, 255, 0)
-	5100 2800 5350 2800
-Wire Notes Line style solid rgb(0, 255, 0)
-	5350 2800 5350 2250
-Wire Notes Line style solid rgb(0, 255, 0)
-	5350 2250 5100 2250
+	4450 2200 4750 2200
 Wire Wire Line
 	3400 3550 3250 3550
 Text Label 3400 3550 2    50   ~ 0
@@ -277,10 +259,6 @@ Text Label 4750 2900 2    50   ~ 0
 DBUS
 Wire Bus Line
 	4450 2900 4750 2900
-Wire Notes Line style solid rgb(0, 255, 0)
-	3250 3200 3250 3750
-Wire Notes Line style solid rgb(0, 255, 0)
-	3000 3200 3000 3750
 Wire Bus Line
 	5000 3100 5200 3100
 Text Label 5000 3100 0    50   ~ 0
@@ -307,23 +285,17 @@ Wire Notes Line style solid rgb(0, 255, 0)
 	5000 2850 5000 3350
 Wire Notes Line style solid rgb(0, 255, 0)
 	5000 3350 4750 3350
-Wire Bus Line
-	5400 2950 5750 2950
-Wire Bus Line
-	5400 2550 5350 2550
-Wire Bus Line
-	5400 2950 5400 2550
 Wire Notes Line
 	5800 2750 5800 4400
 Wire Notes Line
 	5450 2750 5450 4400
 Wire Notes Line
 	5450 2750 5800 2750
-Text Label 5750 2850 2    50   ~ 0
+Text Label 5750 2950 2    50   ~ 0
 DBUS
 Wire Bus Line
-	5500 2850 5750 2850
-Text Label 5750 2950 2    50   ~ 0
+	5500 2950 5750 2950
+Text Label 5750 2850 2    50   ~ 0
 ABUS
 Entry Wire Line
 	5400 4450 5500 4350
@@ -488,11 +460,9 @@ Wire Notes Line style solid rgb(0, 255, 0)
 Wire Notes Line style solid rgb(0, 255, 0)
 	4750 4550 4750 4050
 Wire Wire Line
-	4250 2350 4250 2200
+	4250 2250 4250 2100
 Wire Wire Line
-	4250 2200 2650 2200
-Wire Wire Line
-	2650 2200 2650 3200
+	4250 2100 2650 2100
 Entry Wire Line
 	4350 4500 4450 4400
 Entry Wire Line
@@ -546,13 +516,57 @@ FLAGS
 Wire Wire Line
 	2650 3200 3000 3200
 Wire Notes Line style solid rgb(0, 255, 0)
-	3000 3200 3000 3150
-Wire Notes Line style solid rgb(0, 255, 0)
 	3000 3150 3250 3150
 Wire Notes Line style solid rgb(0, 255, 0)
-	3250 3150 3250 3200
+	3250 3150 3250 3750
+Wire Notes Line style solid rgb(0, 255, 0)
+	3000 3150 3000 3750
+Text Label 4750 2600 2    50   ~ 0
+READ
+Wire Wire Line
+	4450 2600 4750 2600
+Text Label 3900 2850 0    50   ~ 0
+ID_ACL
 Wire Bus Line
-	4350 2350 4350 2750
+	4750 2500 4450 2500
+Wire Notes Line style solid rgb(0, 255, 0)
+	4750 2050 5000 2050
+Wire Notes Line style solid rgb(0, 255, 0)
+	4750 2050 4750 2650
+Wire Notes Line style solid rgb(0, 255, 0)
+	5000 2050 5000 2650
+Wire Bus Line
+	4350 2100 4750 2100
+Wire Bus Line
+	5050 2850 5750 2850
+Wire Wire Line
+	2650 2100 2650 3200
+Wire Notes Line style solid rgb(0, 255, 0)
+	3900 2200 3650 2200
+Wire Notes Line style solid rgb(0, 255, 0)
+	3900 2200 3900 4700
+Wire Notes Line style solid rgb(0, 255, 0)
+	3650 2200 3650 4700
+Wire Wire Line
+	3900 2850 4400 2850
+Wire Wire Line
+	4400 2700 4400 2850
+Wire Wire Line
+	4400 2700 4750 2700
+Text Label 4750 2700 2    50   ~ 0
+ID_ACL
+Wire Notes Line style solid rgb(0, 255, 0)
+	4750 2650 4750 2750
+Wire Notes Line style solid rgb(0, 255, 0)
+	4750 2750 5000 2750
+Wire Notes Line style solid rgb(0, 255, 0)
+	5000 2750 5000 2650
+Wire Bus Line
+	5000 2400 5050 2400
+Wire Bus Line
+	5050 2400 5050 2850
+Wire Bus Line
+	4350 2100 4350 2650
 Wire Bus Line
 	5400 3350 5400 4750
 Wire Bus Line
