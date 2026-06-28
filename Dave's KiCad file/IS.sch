@@ -531,10 +531,6 @@ Wire Bus Line
 	4750 2500 4450 2500
 Wire Notes Line style solid rgb(0, 255, 0)
 	4750 2050 5000 2050
-Wire Notes Line style solid rgb(0, 255, 0)
-	4750 2050 4750 2650
-Wire Notes Line style solid rgb(0, 255, 0)
-	5000 2050 5000 2650
 Wire Bus Line
 	4350 2100 4750 2100
 Wire Bus Line
@@ -556,15 +552,21 @@ Wire Wire Line
 Text Label 4750 2700 2    50   ~ 0
 ID_ACL
 Wire Notes Line style solid rgb(0, 255, 0)
-	4750 2650 4750 2750
-Wire Notes Line style solid rgb(0, 255, 0)
 	4750 2750 5000 2750
-Wire Notes Line style solid rgb(0, 255, 0)
-	5000 2750 5000 2650
 Wire Bus Line
 	5000 2400 5050 2400
 Wire Bus Line
 	5050 2400 5050 2850
+Wire Notes Line style solid rgb(0, 255, 0)
+	4750 2050 4750 2750
+Wire Notes Line style solid rgb(0, 255, 0)
+	5000 2050 5000 2750
+Wire Wire Line
+	3400 3550 3400 4600
+Wire Wire Line
+	3400 4600 1900 4600
+Wire Wire Line
+	1900 4600 1900 3400
 Wire Bus Line
 	4350 2100 4350 2650
 Wire Bus Line
