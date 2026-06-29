@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -573,4 +573,10 @@ Wire Bus Line
 	5400 3350 5400 4750
 Wire Bus Line
 	4350 3050 4350 4750
+$Sheet
+S 7550 3250 800  600 
+U 6A42BAB8
+F0 "L2SeqCtrl" 50
+F1 "L2SeqCtrl.sch" 50
+$EndSheet
 $EndSCHEMATC
