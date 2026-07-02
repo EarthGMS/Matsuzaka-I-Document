@@ -265,8 +265,6 @@ Wire Notes Line style solid rgb(0, 255, 0)
 	5000 2850 5000 3350
 Wire Notes Line style solid rgb(0, 255, 0)
 	5000 3350 4750 3350
-Wire Notes Line
-	5450 2750 5800 2750
 Text Label 5750 2950 2    50   ~ 0
 DBUS
 Wire Bus Line
@@ -293,7 +291,7 @@ Entry Wire Line
 	5400 3450 5500 3350
 Entry Wire Line
 	5400 3350 5500 3250
-Text Notes 5450 2750 0    50   ~ 0
+Text Notes 5450 2650 0    50   ~ 0
 OUTPUTS
 Text Label 5750 3050 2    50   ~ 0
 MODE
@@ -511,10 +509,16 @@ Wire Wire Line
 	4400 2700 4400 2850
 Wire Notes Line
 	5450 4250 5800 4250
+Wire Wire Line
+	5500 2750 5750 2750
+Text Label 5750 2750 2    50   ~ 0
+RESET
 Wire Notes Line
-	5450 2750 5450 4250
+	5450 2650 5800 2650
 Wire Notes Line
-	5800 4250 5800 2750
+	5450 2650 5450 4250
+Wire Notes Line
+	5800 2650 5800 4250
 Wire Bus Line
 	4350 2200 4350 2650
 Wire Bus Line
