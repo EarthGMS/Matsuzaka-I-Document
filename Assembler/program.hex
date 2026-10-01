@@ -1,0 +1,5 @@
+// CPU16 program image - hex format, 1 word (16-bit) per line
+// <snip>: <hex 4 snip>  // addr <hex> (<dec>)  <source line snip>
+// <snip> Verilog $readmemh (<snip>)
+
+6800  // addr 0x0000 (0)  NOP
